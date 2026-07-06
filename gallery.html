@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Narayan Prasad Mishra</title>
+    <meta name="description" content="Portfolio gallery of design and development projects by Narayan Prasad Mishra.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+   <!-- Header & Navigation -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
+                     onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
+                <span class="logo-text">Narayan</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Gallery</span>
+                </div>
+                <h1>My Portfolio</h1>
+                <p>A showcase of my design and development projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Project 1: Web Design -->
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project1.jpg" alt="Website Design Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Web Design</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Business Website</h3>
+                                <p>Modern responsive website for a local business</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Business Website Design</h3>
+                        <span>Web Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Graphic Design -->
+                <div class="gallery-item" data-category="graphic">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project2.jpg" alt="Logo Design Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Graphic Design</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Brand Identity</h3>
+                                <p>Complete logo and branding package for a startup</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Startup Branding</h3>
+                        <span>Graphic Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project 3: UI/UX Design -->
+                <div class="gallery-item" data-category="ui">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project3.jpg" alt="Mobile App Design Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23F59E0B%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>UI/UX Design</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Fitness App UI</h3>
+                                <p>User interface design for a fitness tracking app</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Mobile App Design</h3>
+                        <span>UI/UX Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Web Design -->
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project4.jpg" alt="E-commerce Website Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%234F46E5%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>E-commerce</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>E-commerce Store</h3>
+                                <p>Online shopping platform with payment integration</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>E-commerce Website</h3>
+                        <span>Web Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Branding -->
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project5.jpg" alt="Branding Package Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Branding</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Corporate Branding</h3>
+                                <p>Complete branding package for a corporate client</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Corporate Branding</h3>
+                        <span>Branding</span>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Graphic Design -->
+                <div class="gallery-item" data-category="graphic">
+                    <div class="gallery-image">
+                        <!-- Replace with your project image -->
+                        <img src="assets/images/project6.jpg" alt="Marketing Materials Project" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Marketing Materials</text></svg>'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Marketing Materials</h3>
+                                <p>Brochures, flyers, and social media graphics</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Marketing Materials</h3>
+                        <span>Graphic Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Clients I've Worked With</h2>
+                <p>Some of the amazing clients I've had the pleasure to work with</p>
+            </div>
+            
+            <div class="client-logos">
+                <div class="client-logo">
+                    <i class="fas fa-building"></i>
+                    <span>Business Corp</span>
+                </div>
+                <div class="client-logo">
+                    <i class="fas fa-store"></i>
+                    <span>ShopEasy</span>
+                </div>
+                <div class="client-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>HealthPlus</span>
+                </div>
+                <div class="client-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduTech</span>
+                </div>
+                <div class="client-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>FoodExpress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What clients say about working with me</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Narayan delivered an exceptional website for our business. His attention to detail and creativity exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Rajesh Sharma</h4>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The branding Narayan created for our startup perfectly captured our vision. Highly professional and creative!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Priya Singh</h4>
+                            <span>Startup Founder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Working with Narayan was a great experience. He understood our requirements and delivered a beautiful e-commerce site."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>Amit Patel</h4>
+                            <span>Shop Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Like What You See?</h2>
+                <p>Let's work together on your next project</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Start a Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <!-- In each footer section, update: -->
+<div class="footer-logo">
+    <div class="navbar-brand" style="justify-content: center;">
+        <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
+             onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
+        <span class="logo-text">Narayan</span>
+    </div>
+</div>
+                    <p class="footer-description">
+                        Creative Graphics Designer & Web Developer based in Butwal, Nepal. 
+                        Building clean, responsive websites and creating useful user experiences.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#graphic-design">Graphic Design</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#ecommerce">E-commerce</a></li>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mishra Niwash, Muktinath Temple Road, Butwal-12, Nayagaun</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>designernpmishra@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9867549675</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Narayan Prasad Mishra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Gallery Page Specific Styles -->
+    <style>
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .filter-btn {
+            padding: 12px 30px;
+            background: white;
+            border: 2px solid var(--gray-light);
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .gallery-item {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .gallery-image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-image img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: white;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay-content {
+            transform: translateY(0);
+        }
+
+        .overlay-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .overlay-content p {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .gallery-info {
+            padding: 25px;
+            background: white;
+        }
+
+        .gallery-info h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: var(--dark-color);
+        }
+
+        .gallery-info span {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .client-logos {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+
+        .client-logo {
+            background: white;
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .client-logo:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .client-logo i {
+            font-size: 48px;
+            color: var(--primary-color);
+        }
+
+        .client-logo span {
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .testimonial-content {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .testimonial-content i {
+            font-size: 30px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .testimonial-content p {
+            font-size: 18px;
+            font-style: italic;
+            color: var(--gray-color);
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .client-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .testimonial-author h4 {
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .testimonial-author span {
+            color: var(--gray-color);
+            font-size: 14px;
+        }
+    </style>
+    
+    <!-- Gallery Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide gallery items based on filter
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

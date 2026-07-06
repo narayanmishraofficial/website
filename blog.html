@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Narayan Prasad Mishra</title>
+    <meta name="description" content="Blog articles about web design, development, and creative insights by Narayan Prasad Mishra.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+   <!-- Header & Navigation -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
+                     onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
+                <span class="logo-text">Narayan</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Blog</span>
+                </div>
+                <h1>Blog & Articles</h1>
+                <p>Insights, tutorials, and thoughts about design and development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog1.jpg" alt="Web Design Trends Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Web Trends</text></svg>'">
+                        <div class="blog-date">
+                            <span>15</span>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> Web Design</span>
+                            <span><i class="fas fa-comments"></i> 5 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">Top 10 Web Design Trends for 2023</a></h2>
+                        <p>Explore the latest trends in web design that are shaping user experiences this year, from dark mode to micro-interactions.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog2.jpg" alt="Responsive Design Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Responsive Design</text></svg>'">
+                        <div class="blog-date">
+                            <span>10</span>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> Development</span>
+                            <span><i class="fas fa-comments"></i> 8 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">The Importance of Responsive Design in 2023</a></h2>
+                        <p>Why every website needs to be responsive in today's multi-device world and how to implement it effectively.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog3.jpg" alt="Color Theory Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23F59E0B%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Color Theory</text></svg>'">
+                        <div class="blog-date">
+                            <span>5</span>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> Design</span>
+                            <span><i class="fas fa-comments"></i> 3 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">Color Theory in Web Design: A Complete Guide</a></h2>
+                        <p>How to choose the right color palette for your website to evoke the right emotions and improve user experience.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog4.jpg" alt="Bootstrap 5 Tutorial" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%234F46E5%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Bootstrap 5</text></svg>'">
+                        <div class="blog-date">
+                            <span>1</span>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> Tutorial</span>
+                            <span><i class="fas fa-comments"></i> 12 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">Getting Started with Bootstrap 5: A Beginner's Guide</a></h2>
+                        <p>A comprehensive beginner's guide to building responsive websites with Bootstrap 5, with practical examples.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 5 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog5.jpg" alt="SEO Optimization Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>SEO Best Practices</text></svg>'">
+                        <div class="blog-date">
+                            <span>28</span>
+                            <span>May</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> SEO</span>
+                            <span><i class="fas fa-comments"></i> 6 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">SEO Best Practices for Web Developers in 2023</a></h2>
+                        <p>Essential SEO techniques that every web developer should implement to improve website visibility and rankings.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 6 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <!-- Replace with your blog image -->
+                        <img src="assets/images/blog6.jpg" alt="UI/UX Design Principles" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>UI/UX Principles</text></svg>'">
+                        <div class="blog-date">
+                            <span>25</span>
+                            <span>May</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
+                            <span><i class="fas fa-folder"></i> UI/UX</span>
+                            <span><i class="fas fa-comments"></i> 4 Comments</span>
+                        </div>
+                        <h2><a href="blog-single.html">10 UI/UX Principles for Better Conversion Rates</a></h2>
+                        <p>Design principles that can help improve conversion rates on your website by creating better user experiences.</p>
+                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">Next <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section bg-light">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Get the latest articles, tutorials, and design resources delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <!-- In each footer section, update: -->
+<div class="footer-logo">
+    <div class="navbar-brand" style="justify-content: center;">
+        <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
+             onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
+        <span class="logo-text">Narayan</span>
+    </div>
+</div>
+                    <p class="footer-description">
+                        Creative Graphics Designer & Web Developer based in Butwal, Nepal. 
+                        Building clean, responsive websites and creating useful user experiences.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#graphic-design">Graphic Design</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#ecommerce">E-commerce</a></li>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mishra Niwash, Muktinath Temple Road, Butwal-12, Nayagaun</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>designernpmishra@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9867549675</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Narayan Prasad Mishra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Blog Page Specific Styles -->
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .blog-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-post:hover .blog-image img {
+            transform: scale(1.1);
+        }
+
+        .blog-date {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            width: 60px;
+        }
+
+        .blog-date span:first-child {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .blog-date span:last-child {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .blog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: var(--gray-color);
+        }
+
+        .blog-meta span i {
+            margin-right: 5px;
+        }
+
+        .blog-content h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .blog-content h2 a {
+            color: var(--dark-color);
+            transition: color 0.3s ease;
+        }
+
+        .blog-content h2 a:hover {
+            color: var(--primary-color);
+        }
+
+        .blog-content p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s ease;
+        }
+
+        .read-more:hover {
+            gap: 10px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .page-link {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 8px;
+            color: var(--dark-color);
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .page-link:hover,
+        .page-link.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .newsletter-section {
+            padding: 80px 0;
+        }
+
+        .newsletter-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-content h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .newsletter-content p {
+            font-size: 18px;
+            color: var(--gray-color);
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 15px;
+        }
+
+        .newsletter-form input {
+            flex-grow: 1;
+            padding: 15px 20px;
+            border: 2px solid var(--gray-light);
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+    </style>
+</body>
+</html>
