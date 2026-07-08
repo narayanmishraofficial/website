@@ -1,218 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Narayan Prasad Mishra</title>
-    <meta name="description" content="Blog articles about web design, development, and creative insights by Narayan Prasad Mishra.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog · Narayan Prasad Mishra</title>
+    <meta name="description" content="Design tips, trends, and insights from Narayan Prasad Mishra – Graphic Designer & UI/UX specialist." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
-   <!-- Header & Navigation -->
-<header class="header">
-    <div class="container">
-        <nav class="navbar">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
-                     onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
-                <span class="logo-text">Narayan</span>
-            </a>
-            
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-            
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </div>
-</header>
-    <!-- Page Hero -->
-    <section class="page-hero">
+    <div id="preloader" class="preloader"><div class="loader"></div></div>
+    <button id="backToTop" class="back-to-top"><i class="bi bi-chevron-up"></i></button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-nav" id="mainNav">
         <div class="container">
-            <div class="hero-content">
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <i class="fas fa-chevron-right"></i>
-                    <span>Blog</span>
-                </div>
-                <h1>Blog & Articles</h1>
-                <p>Insights, tutorials, and thoughts about design and development</p>
+            <a class="navbar-brand" href="index.html">
+                <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle;">
+                    <circle cx="50" cy="50" r="45" fill="#2563EB" />
+                    <text x="28" y="68" font-family="Poppins, sans-serif" font-size="48" font-weight="800" fill="white">N</text>
+                    <text x="48" y="68" font-family="Poppins, sans-serif" font-size="48" font-weight="800" fill="#06B6D4">P</text>
+                    <text x="68" y="68" font-family="Poppins, sans-serif" font-size="48" font-weight="800" fill="white">M</text>
+                    <circle cx="50" cy="78" r="3" fill="#38BDF8" />
+                </svg>
+                <span class="brand-text ms-2">Narayan Mishra</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>📝 Latest Blog Posts</h1>
+            <p>Design insights, tips & creative thoughts from my desk</p>
         </div>
     </section>
 
     <!-- Blog Section -->
     <section class="section-padding">
         <div class="container">
-            <div class="blog-grid">
-                <!-- Blog Post 1 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog1.jpg" alt="Web Design Trends Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Web Trends</text></svg>'">
-                        <div class="blog-date">
-                            <span>15</span>
-                            <span>June</span>
+            <div class="row g-5">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    
+                    <!-- Blog Post 1 -->
+                    <article class="blog-post-modern">
+                        <div class="blog-post-image">
+                            <img src="assets/images/gallery1.jpg" alt="UI/UX Trends" />
+                            <div class="blog-post-date">
+                                <span class="day">15</span>
+                                <span class="month">Jan</span>
+                            </div>
+                            <div class="blog-post-category">
+                                <span>UI/UX Design</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> Web Design</span>
-                            <span><i class="fas fa-comments"></i> 5 Comments</span>
+                        <div class="blog-post-body">
+                            <div class="blog-post-meta">
+                                <span><i class="bi bi-person-circle"></i> Narayan Mishra</span>
+                                <span><i class="bi bi-clock"></i> 5 min read</span>
+                                <span><i class="bi bi-chat"></i> 12 Comments</span>
+                            </div>
+                            <h2><a href="#">10 UI/UX Trends That Will Dominate 2026</a></h2>
+                            <p>The design landscape is evolving rapidly. From AI-powered interfaces to immersive 3D experiences, here are the top trends that every designer should watch out for in the coming year.</p>
+                            <div class="blog-post-footer">
+                                <a href="#" class="btn btn-gradient-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-post-share">
+                                    <a href="#" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" title="Share on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" title="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <h2><a href="blog-single.html">Top 10 Web Design Trends for 2023</a></h2>
-                        <p>Explore the latest trends in web design that are shaping user experiences this year, from dark mode to micro-interactions.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <!-- Blog Post 2 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog2.jpg" alt="Responsive Design Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Responsive Design</text></svg>'">
-                        <div class="blog-date">
-                            <span>10</span>
-                            <span>June</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> Development</span>
-                            <span><i class="fas fa-comments"></i> 8 Comments</span>
-                        </div>
-                        <h2><a href="blog-single.html">The Importance of Responsive Design in 2023</a></h2>
-                        <p>Why every website needs to be responsive in today's multi-device world and how to implement it effectively.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <!-- Blog Post 3 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog3.jpg" alt="Color Theory Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23F59E0B%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Color Theory</text></svg>'">
-                        <div class="blog-date">
-                            <span>5</span>
-                            <span>June</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> Design</span>
-                            <span><i class="fas fa-comments"></i> 3 Comments</span>
-                        </div>
-                        <h2><a href="blog-single.html">Color Theory in Web Design: A Complete Guide</a></h2>
-                        <p>How to choose the right color palette for your website to evoke the right emotions and improve user experience.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <!-- Blog Post 4 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog4.jpg" alt="Bootstrap 5 Tutorial" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%234F46E5%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>Bootstrap 5</text></svg>'">
-                        <div class="blog-date">
-                            <span>1</span>
-                            <span>June</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> Tutorial</span>
-                            <span><i class="fas fa-comments"></i> 12 Comments</span>
-                        </div>
-                        <h2><a href="blog-single.html">Getting Started with Bootstrap 5: A Beginner's Guide</a></h2>
-                        <p>A comprehensive beginner's guide to building responsive websites with Bootstrap 5, with practical examples.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <!-- Blog Post 5 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog5.jpg" alt="SEO Optimization Article" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%236366F1%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>SEO Best Practices</text></svg>'">
-                        <div class="blog-date">
-                            <span>28</span>
-                            <span>May</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> SEO</span>
-                            <span><i class="fas fa-comments"></i> 6 Comments</span>
-                        </div>
-                        <h2><a href="blog-single.html">SEO Best Practices for Web Developers in 2023</a></h2>
-                        <p>Essential SEO techniques that every web developer should implement to improve website visibility and rankings.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <!-- Blog Post 6 -->
-                <article class="blog-post">
-                    <div class="blog-image">
-                        <!-- Replace with your blog image -->
-                        <img src="assets/images/blog6.jpg" alt="UI/UX Design Principles" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310B981%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2232%22>UI/UX Principles</text></svg>'">
-                        <div class="blog-date">
-                            <span>25</span>
-                            <span>May</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-user"></i> Narayan Prasad Mishra</span>
-                            <span><i class="fas fa-folder"></i> UI/UX</span>
-                            <span><i class="fas fa-comments"></i> 4 Comments</span>
-                        </div>
-                        <h2><a href="blog-single.html">10 UI/UX Principles for Better Conversion Rates</a></h2>
-                        <p>Design principles that can help improve conversion rates on your website by creating better user experiences.</p>
-                        <a href="blog-single.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-            
-            <!-- Pagination -->
-            <div class="pagination">
-                <a href="#" class="page-link active">1</a>
-                <a href="#" class="page-link">2</a>
-                <a href="#" class="page-link">3</a>
-                <a href="#" class="page-link">Next <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section bg-light">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Subscribe to My Newsletter</h2>
-                <p>Get the latest articles, tutorials, and design resources delivered to your inbox</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
+                    <!-- Blog Post 2 -->
+                    <article class="blog-post-modern">
+                        <div class="blog-post-image">
+                            <img src="assets/images/gallery2.jpg" alt="Freelancing" />
+                            <div class="blog-post-date">
+                                <span class="day">10</span>
+                                <span class="month">Jan</span>
+                            </div>
+                            <div class="blog-post-category">
+                                <span>Freelancing</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-body">
+                            <div class="blog-post-meta">
+                                <span><i class="bi bi-person-circle"></i> Narayan Mishra</span>
+                                <span><i class="bi bi-clock"></i> 7 min read</span>
+                                <span><i class="bi bi-chat"></i> 8 Comments</span>
+                            </div>
+                            <h2><a href="#">How to Build a Powerful Freelance Brand in 2026</a></h2>
+                            <p>Standing out as a freelancer requires more than just skills. Learn how to build a personal brand that attracts premium clients and sets you apart from the competition.</p>
+                            <div class="blog-post-footer">
+                                <a href="#" class="btn btn-gradient-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-post-share">
+                                    <a href="#" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" title="Share on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" title="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-post-modern">
+                        <div class="blog-post-image">
+                            <img src="assets/images/gallery3.jpg" alt="Color Psychology" />
+                            <div class="blog-post-date">
+                                <span class="day">5</span>
+                                <span class="month">Jan</span>
+                            </div>
+                            <div class="blog-post-category">
+                                <span>Graphic Design</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-body">
+                            <div class="blog-post-meta">
+                                <span><i class="bi bi-person-circle"></i> Narayan Mishra</span>
+                                <span><i class="bi bi-clock"></i> 4 min read</span>
+                                <span><i class="bi bi-chat"></i> 5 Comments</span>
+                            </div>
+                            <h2><a href="#">Mastering Color Psychology in Design</a></h2>
+                            <p>Colors evoke emotions and influence decisions. Discover how to use color psychology effectively in your designs to create powerful visual communication.</p>
+                            <div class="blog-post-footer">
+                                <a href="#" class="btn btn-gradient-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-post-share">
+                                    <a href="#" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" title="Share on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" title="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 4 -->
+                    <article class="blog-post-modern">
+                        <div class="blog-post-image">
+                            <img src="assets/images/gallery4.jpg" alt="Portfolio Tips" />
+                            <div class="blog-post-date">
+                                <span class="day">28</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="blog-post-category">
+                                <span>Career</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-body">
+                            <div class="blog-post-meta">
+                                <span><i class="bi bi-person-circle"></i> Narayan Mishra</span>
+                                <span><i class="bi bi-clock"></i> 6 min read</span>
+                                <span><i class="bi bi-chat"></i> 15 Comments</span>
+                            </div>
+                            <h2><a href="#">How to Create a Portfolio That Gets You Hired</a></h2>
+                            <p>Your portfolio is your most powerful tool. Learn the secrets to creating a portfolio that impresses clients and lands you your dream design projects.</p>
+                            <div class="blog-post-footer">
+                                <a href="#" class="btn btn-gradient-sm">Read More <i class="bi bi-arrow-right"></i></a>
+                                <div class="blog-post-share">
+                                    <a href="#" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" title="Share on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" title="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    
+                    <!-- About Author Widget -->
+                    <div class="sidebar-widget">
+                        <h4><i class="bi bi-person-circle"></i> About Author</h4>
+                        <img src="assets/images/profile.jpg" alt="Narayan Mishra" class="author-img" />
+                        <h5>Narayan Prasad Mishra</h5>
+                        <p class="author-text">Graphic Designer & UI/UX specialist sharing design insights and tips.</p>
+                    </div>
+
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget">
+                        <h4><i class="bi bi-search"></i> Search</h4>
+                        <div class="search-box">
+                            <input type="text" class="form-control" placeholder="Search articles..." />
+                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h4><i class="bi bi-grid"></i> Categories</h4>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> UI/UX Design <span>12</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Graphic Design <span>8</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Freelancing <span>6</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Web Design <span>5</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Branding <span>4</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget">
+                        <h4><i class="bi bi-clock-history"></i> Recent Posts</h4>
+                        <div class="recent-post">
+                            <img src="assets/images/gallery1.jpg" alt="Post" />
+                            <div>
+                                <h6><a href="#">10 UI/UX Trends for 2026</a></h6>
+                                <span>Jan 15, 2026</span>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <img src="assets/images/gallery2.jpg" alt="Post" />
+                            <div>
+                                <h6><a href="#">Freelance Branding Guide</a></h6>
+                                <span>Jan 10, 2026</span>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <img src="assets/images/gallery3.jpg" alt="Post" />
+                            <div>
+                                <h6><a href="#">Color Psychology Mastery</a></h6>
+                                <span>Jan 5, 2026</span>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <img src="assets/images/gallery4.jpg" alt="Post" />
+                            <div>
+                                <h6><a href="#">Portfolio That Gets Hired</a></h6>
+                                <span>Dec 28, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h4><i class="bi bi-tags"></i> Popular Tags</h4>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">#UI/UX</a>
+                            <a href="#" class="tag">#Design</a>
+                            <a href="#" class="tag">#Freelance</a>
+                            <a href="#" class="tag">#GraphicDesign</a>
+                            <a href="#" class="tag">#WebDesign</a>
+                            <a href="#" class="tag">#Branding</a>
+                            <a href="#" class="tag">#Portfolio</a>
+                            <a href="#" class="tag">#Creative</a>
+                            <a href="#" class="tag">#Trends</a>
+                            <a href="#" class="tag">#Tips</a>
+                            <a href="#" class="tag">#Career</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h4><i class="bi bi-envelope"></i> Newsletter</h4>
+                        <p>Get design tips & updates directly in your inbox.</p>
+                        <form>
+                            <input type="email" class="form-control" placeholder="Your email address" />
+                            <button type="submit" class="btn btn-gradient w-100 mt-2">Subscribe <i class="bi bi-send"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -220,265 +301,42 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <!-- In each footer section, update: -->
-<div class="footer-logo">
-    <div class="navbar-brand" style="justify-content: center;">
-        <img src="assets/images/logo.png" alt="Narayan Prasad Mishra Logo" class="logo-image"
-             onerror="this.style.display='none'; document.querySelector('.logo-text').style.marginLeft='0';">
-        <span class="logo-text">Narayan</span>
-    </div>
-</div>
-                    <p class="footer-description">
-                        Creative Graphics Designer & Web Developer based in Butwal, Nepal. 
-                        Building clean, responsive websites and creating useful user experiences.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5>Narayan Prasad Mishra</h5>
+                    <p>Graphic Designer · UI/UX · Web Designer · Freelancer</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
                     </div>
                 </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#web-development">Web Development</a></li>
-                        <li><a href="services.html#graphic-design">Graphic Design</a></li>
-                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
-                        <li><a href="services.html#ecommerce">E-commerce</a></li>
-                        <li><a href="services.html#seo">SEO Optimization</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Mishra Niwash, Muktinath Temple Road, Butwal-12, Nayagaun</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>designernpmishra@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>9867549675</span>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <h5>Contact</h5>
+                    <p><i class="bi bi-geo-alt"></i> Butwal-12, Nayagaun, Nepal</p>
+                    <p><i class="bi bi-phone"></i> 9867549675</p>
+                    <p><i class="bi bi-envelope"></i> narayanmishraofficial@gmail.com</p>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Narayan Prasad Mishra. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>© 2026 Narayan Prasad Mishra. Designed with <i class="bi bi-heart-fill text-danger"></i></p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
-    
-    <!-- Blog Page Specific Styles -->
-    <style>
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .blog-post {
-            background: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .blog-post:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .blog-image {
-            position: relative;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .blog-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .blog-post:hover .blog-image img {
-            transform: scale(1.1);
-        }
-
-        .blog-date {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--primary-color);
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            width: 60px;
-        }
-
-        .blog-date span:first-child {
-            display: block;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1;
-        }
-
-        .blog-date span:last-child {
-            font-size: 14px;
-            text-transform: uppercase;
-        }
-
-        .blog-content {
-            padding: 30px;
-        }
-
-        .blog-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 15px;
-            font-size: 14px;
-            color: var(--gray-color);
-        }
-
-        .blog-meta span i {
-            margin-right: 5px;
-        }
-
-        .blog-content h2 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-
-        .blog-content h2 a {
-            color: var(--dark-color);
-            transition: color 0.3s ease;
-        }
-
-        .blog-content h2 a:hover {
-            color: var(--primary-color);
-        }
-
-        .blog-content p {
-            color: var(--gray-color);
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .read-more {
-            color: var(--primary-color);
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            transition: gap 0.3s ease;
-        }
-
-        .read-more:hover {
-            gap: 10px;
-        }
-
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .page-link {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border-radius: 8px;
-            color: var(--dark-color);
-            font-weight: 600;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .page-link:hover,
-        .page-link.active {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        .newsletter-section {
-            padding: 80px 0;
-        }
-
-        .newsletter-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .newsletter-content h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            color: var(--dark-color);
-        }
-
-        .newsletter-content p {
-            font-size: 18px;
-            color: var(--gray-color);
-            margin-bottom: 30px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            gap: 15px;
-        }
-
-        .newsletter-form input {
-            flex-grow: 1;
-            padding: 15px 20px;
-            border: 2px solid var(--gray-light);
-            border-radius: var(--border-radius);
-            font-size: 16px;
-            transition: var(--transition);
-        }
-
-        .newsletter-form input:focus {
-            border-color: var(--primary-color);
-            outline: none;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
